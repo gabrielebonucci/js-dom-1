@@ -6,6 +6,6 @@ const button = document.getElementById('bottoneLuce');
 //Aggiungo una funzione, quando qualcuno clicca sull'elemento "button" esegue il comando
 
 button.addEventListener('click', function() {
-    lamp.src = "img/yellow_lamp.png";
+    lamp.src = "img/lampadina_accesa.png";
 });
 
