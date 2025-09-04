@@ -1,0 +1,9 @@
+#lampadina-container{
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
