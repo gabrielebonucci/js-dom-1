@@ -18,11 +18,12 @@ button.addEventListener('click', function() {
         // Cambio il testo del bottone
 
         button.innerText = "Spegni";
-
+        button.style.backgroundColor = 'black';
+        button.style.color = 'white';
 
 
     } else {
-        
+
         // Altrimenti se è gia accesa: la spengo
         // Ripristino l'immagine della lampadina spenta
 
@@ -31,6 +32,8 @@ button.addEventListener('click', function() {
         // Ripristino il testo del botton in "Accendi"
 
         button.innerText = "Accendi";
+        button.style.backgroundColor = 'yellow';
+        button.style.color = 'black';
 
        
     }
