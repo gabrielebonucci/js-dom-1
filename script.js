@@ -3,9 +3,36 @@
 const lamp = document.getElementById('lampadina');
 const button = document.getElementById('bottoneLuce');
 
-//Aggiungo una funzione, quando qualcuno clicca sull'elemento "button" esegue il comando
+// Aggiungo l'ascoltatore di eventi per il click
 
 button.addEventListener('click', function() {
-    lamp.src = "img/lampadina_accesa.png";
+    //controllo se l'url dell'immagine attuale contiene la parola "spenta"
+
+    if (lamp.src.includes("spenta")) {
+
+        // Se è SPENTA: la accendo
+        // Cambio l'immagine con quella della lampadina accesa
+
+        lamp.src = "img/lampadina_accesa.png";
+
+        // Cambio il testo del bottone
+
+        button.innerText = "Spegni";
+
+
+
+    } else {
+        
+        // Altrimenti se è gia accesa: la spengo
+        // Ripristino l'immagine della lampadina spenta
+
+        lamp.src = "img/lampadina_spenta.png";
+
+        // Ripristino il testo del botton in "Accendi"
+
+        button.innerText = "Accendi";
+
+       
+    }
 });
 
